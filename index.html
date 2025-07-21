@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мой канал</title>
+  <style>
+    /* Сброс отступов и высота */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: #000000; /* чёрный фон */
+      color: #ff0000; /* красный цвет текста */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-bottom: 2px solid #ff0000;
+      user-select: none;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 20px 40px;
+      background-color: transparent;
+      border: 3px solid #ff0000;
+      border-radius: 10px;
+      color: #ff0000;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+      min-width: 220px;
+      text-align: center;
+    }
+
+    a.button:hover,
+    a.button:focus {
+      background-color: #ff0000;
+      color: #000000;
+      outline: none;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 1rem;
+      border-top: 2px solid #ff0000;
+      user-select: none;
+    }
+
+    /* Для мобильных устройств */
+    @media (max-width: 480px) {
+      header {
+        font-size: 2rem;
+        padding: 20px;
+      }
+      a.button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        min-width: 180px;
+      }
+      main {
+        gap: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Добро пожаловать на мой канал</header>
+
+  <main>
+    <a href="https://www.youtube.com/твое_имя_канала" target="_blank" rel="noopener noreferrer" class="button" aria-label="Мой YouTube канал">
+      YouTube
+    </a>
+    <a href="https://www.twitch.tv/твое_имя_канала" target="_blank" rel="noopener noreferrer" class="button" aria-label="Мой Twitch канал">
+      Twitch
+    </a>
+  </main>
+
+  <footer>© 2025 Мой канал</footer>
+
+</body>
+</html>
